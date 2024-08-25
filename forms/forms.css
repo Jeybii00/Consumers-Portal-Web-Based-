@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Tilt Neon";
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/homepage_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/** Reconnection with change name css **/
+
+.reconnection-container {
+    padding: 20px;
+    width: 600px;
+    height: fit-content;
+    margin: 1.5rem auto 1.5rem auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(8, 5, 5, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=file] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.submit input {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    max-width: 70px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#submit {
+    background: #3F497F;
+    border: none;
+}
+
+.cancel-btn {
+    width: 115px;
+    height: 100px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.reqq span {
+    font-weight: bold;
+}
+
+/** END **/
+
+
+/** Waiver with change name css **/
+
+.waiver-container {
+    padding: 20px;
+    width: 700px;
+    height: fit-content;
+    margin: 1.5rem auto 1.5rem auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(8, 5, 5, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=file] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+input[type=text],
+[type=number] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type=date] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.reason-box {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+
+}
+
+.submit input {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    max-width: 70px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#submit {
+    background: #3F497F;
+    border: none;
+}
+
+.cancel-btn {
+    width: 115px;
+    height: 100px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.reqq span {
+    font-weight: bold;
+}
+
+/** END **/
+
+/** Spouse with change name css **/
+
+.spouse-container{
+    padding: 20px;
+    width: 500px;
+    height: fit-content;
+    margin: 1.5rem auto 1.5rem auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(8, 5, 5, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spouse-container h3{
+    font-size: 20px;
+}
+
+li{
+    list-style-type: numbers;
+}
+
+input[type=file] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.submit input {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    max-width: 70px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#submit {
+    background: #3F497F;
+    border: none;
+}
+
+.submit a{
+    font-weight: 500;
+}
+
+.cancel-btn {
+    width: 115px;
+    height: 100px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    line-height: 25px;
+}
+
+.reqq span {
+    font-weight: bold;
+}
+
+.ast{
+    color: crimson;
+}
+
+/** END **/
+
+
+
+
+/** Heir/New Owner css **/
+
+.heir-container {
+    padding: 20px;
+    width: 600px;
+    height: fit-content;
+    margin: 1.5rem auto 1.5rem auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(8, 5, 5, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form h3{
+    font-size: 15px;
+}
+
+li{
+    list-style-type: numbers;
+}
+
+
+input[type=file] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+input[type=text],
+[type=number] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type=date] {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    max-width: 200px;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.reason-box {
+    border-radius: 5px;
+    border: 1px solid #F8F5E4;
+    width: 100%;
+    padding: 5px 0 5px 5px;
+    background: rgba(0, 0, 0, 0.1);
+
+}
+
+.submit input {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    max-width: 70px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#submit {
+    background: #3F497F;
+    border: none;
+}
+
+.cancel-btn {
+    width: 115px;
+    height: 100px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.reqq span {
+    font-weight: bold;
+}
+
+.ast{
+    color: crimson;
+}
+
+/** END **/
