@@ -1,0 +1,74 @@
+
+
+/* Homepage Menu for Dashboard and Index */
+
+@media screen and (max-width: 1320px) {
+
+    body{
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 60px 1fr;
+    }
+
+  }
+
+@media screen and (max-width: 600px) {
+    body{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 60px 1fr;
+      }
+
+    header{
+        padding:0 50px 0 20px;
+    }
+
+    .logo-header a{
+        font-size: 17px;
+    }
+
+
+    .sidebar-content{
+      width: 150px;
+    }
+
+    .content-body{
+        overflow-x: hidden;
+    }
+
+    .nav-bar{
+        margin-left: -50px;
+    }
+
+    .mainbody{
+      width: fit-content;
+      font-size: 10px;
+      margin-left: -30px;
+    }
+
+    .data{
+      width: 200px;
+    }
+
+    .pages{
+      text-align: center;
+      margin-left: 50px;
+      font-size: 12px;
+    }
+
+    .pagination{
+      text-align: center;
+      margin: 0 auto;
+      font-size: 12px;
+    }
+
+    #view_bill tr,
+    #view_bill th{
+      text-align: left;
+    }
+
+    .user-container,
+    #view_bill{
+      overflow: auto;
+    }
+}

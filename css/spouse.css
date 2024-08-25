@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: left;
+    max-width: 700px;
+    margin: auto;
+}
+.form{
+    border: 2px solid black;
+    border-radius: 2%;
+}
+h2{
+    text-align: center;
+    padding: 15px;
+}
+h3{
+    margin-left: 10px;
+}
+li{
+    margin-left: 30px;
+}
+p{
+    margin-left: 20px;
+    font-weight: bold;
+}
+input{
+    margin-left: 70px;
+}
+button{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid black;
+    margin-left: 43%;
+}

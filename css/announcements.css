@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap');
+
+
+*   {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tilt Neon";
+}
+
+.container{
+    width: 100%;
+}
+
+.blog-section{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.blog-section .title{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .title h2{
+    font-size: 40px;
+    color:#357ca6;
+    text-transform: uppercase;
+    margin-top: 300px;
+}
+
+.blog-section .title p{
+    font-size: 18px;
+    color: #7e7e7e;
+    margin-top: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.cards .card{
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    padding: 15px 20px;
+    background-color:#b6ffa9;
+}
+
+.content h4{
+    font-size: 24px;
+    color: #222;
+    font-weight: 500;
+}
+
+.content p{
+    color: #7e7e7e;
+    font-size: 15px;
+}
+
+.content a{
+    text-decoration: none;
+    color: #fff;
+    margin-top:12px;
+    display: inline-block;
+    background-color: #3a706a;
+    padding: 8px 15px;    
+}
+
+.card .posted-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #ada62b;
+    padding: 6px 15px;
+}
+
+@media screen and (max-width: 992px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cards{
+        grid-template-columns: repeat(1);
+    }
+}

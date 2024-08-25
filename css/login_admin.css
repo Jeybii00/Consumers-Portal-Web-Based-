@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Tilt Neon";
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    padding: 10px;
+    background-image: url(../images/homepage_bg.png);
+    overflow-x: hidden;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 370px;
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 8%;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.error-text {
+    display: none;
+    width: 100%;
+    background: lightcoral;
+    height: 40px;
+    text-align: center;
+    margin: 1%;
+    padding-top: 10px;
+    border: 1px solid #dfa5ab;
+    color: #851923;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #2E8B57;
+}
+
+.title img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container form .user-info {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-info .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px)
+}
+
+.user-info .input-box .info {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-info .input-box input {
+    height: 45px;
+    width: 300px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #696969;
+}
+
+label {
+    display: flex;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.submit input {
+    background-color: #2E8B57;
+    border: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+form input[type="text"] {
+    padding-left: 10px;
+}
+
+form input[type="password"] {
+    padding-left: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type="password"] {
+    width: 300px;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type="text"]:focus {
+    width: 305px;
+    border: 2px solid #2E8B57;
+}
+
+input[type="password"]:focus {
+    width: 305px;
+    border: 2px solid #2E8B57;
+}
+
+.ast {
+    color: #B22222;
+    font-weight: bold;
+}

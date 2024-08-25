@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Tilt Neon";
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-image: url(../images/homepage_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.container {
+    width: 400px;
+    height: fit-content;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 20px;
+    margin: 5% auto;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.error-text {
+    display: none;
+    width: 100%;
+    background: lightcoral;
+    height: 40px;
+    text-align: center;
+    margin: 1%;
+    padding-top: 10px;
+    border: 1px solid #dfa5ab;
+    color: #851923;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #2E8B57;
+}
+
+.title img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.container form .user-info {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-info .input-box {
+    margin: 20px 0 12px 0;
+    width: 100%;
+}
+
+.user-info .input-box .info {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-info .input-box input {
+    height: 45px;
+    width: 300px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #696969;
+}
+
+.user-info .input-box label{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.ast{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.submit input {
+    background-color: #2E8B57;
+    border: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submit {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.register {
+    display: grid;
+    margin-top: 10%;
+    font-size: 13px;
+    text-transform: capitalize;
+    place-items: center;
+}
+
+.register a {
+    position: relative;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.register a {
+    position: relative;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+form input[type="number"],
+form input[type="password"],
+form input[type="text"] {
+    padding-left: 10px;
+}
+
+input[type="password"],
+input[type="number"],
+input[type="text"]{
+    width: 300px;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus{
+    width: 305px;
+    border: 2px solid #2E8B57;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Mediaquiries */
+
+    @media screen and (max-width: 600px) {
+
+        .container{
+            width: 300px;
+            margin:  auto;
+            font-size: 25px;
+        }
+
+        .container .title{
+            font-size: 25px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .user-info .input-box input{
+            width: 250px;
+        }
+
+        .user-info .input-box label{
+            width: calc(100% / 2 - 50px);        
+        }
+    }

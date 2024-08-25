@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of directors</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel = "stylesheet" href = "css/homestyle.css">
+</head>
+
+<body>
+
+<div class="section">
+    <header>
+            <div class="logo">
+                <a href = "index.php"><img src="images/ilecoLogo.png">ILECO-1</a>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.php" class = "active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Consumer Info</a>
+
+                        <ul>
+                            <li><a href="reconnection.php">Reconnection with change name</a></li>
+                            <li><a href="waiver.php">Waiver for change name</a></li>
+                            <li><a href="application.php">Service Application</a></li>
+                            <li><a href="about-us.php">Board of Directors</a></li>
+                        </ul>
+
+
+                    </li>
+                    <li>
+                        <a href="about.php">About</a>
+                    </li>
+
+                    <li>
+                        <button class = "btn-log" onclick="location.href= 'php/login.php'">  Login</button>      
+                    </li>
+                    
+                    <li>
+                    <button class = "btn-signup" onclick="location.href= 'php/register.php'">Sign Up</button>      
+                </li>
+                </ul>
+            </nav>
+
+
+    </header>
+
+        <div class="cards">
+            <div class="new-arrival">
+                <center>
+                    <h1>Board of Directors</h1>
+                </center>
+            </div>
+            <div class="card">
+                <div class="image-section">
+               <img src="images/garcia.jpg">
+                </div>
+                <div class="description">
+                <h1 style="margin-left:-60px;">Tito T. Garcia</h1>
+                    <p style="margin-left:-60px;"><b>President</b><br><span>Disctrict 7 - Igbaras & Tubungan</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/ESCANLAR.jpg">
+                </div>
+                <div class="description">
+                    <h1 class = "second" style="margin-left:20px;">Dr. Victorio Frenie S. Escanlar</h1>
+                    <p style="margin-left:20px;"><b>Vice President</b><br><span>District 3 - Oton & Pavia</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/padilla.jpg">
+                </div>
+                <div class="description">
+                    <h1>Maria Sophia S. Padilla</h1>
+                    <p><b>Treasurer</b><br><span>District 4 - Sta. Barbara, San Miguel & Leganes</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/sapitanan.jpg">
+                </div>
+                <div class="description">
+                    <h1 style="margin-left:-50px;">Joselito N. Sapitanan</h1>
+                    <p style="margin-left:-50px;"><b>Secretary</b><br><span>District 1 - Miagao & San Joaquin</span></p>
+                </div>
+            </div>
+
+        </div>
+
+
+                <!--- Second Card Starts Here ---->
+
+    <div class="section">
+        <div class="cards">
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/nacionales.jpg">
+                </div>
+                <div class="description">
+                    <h1 style="margin-left:-50px;">Larry P. Nacionales</h1>
+                    <p style="margin-left:-50px;"><b>Member</b><br><span>District 5 - Guimbal & Tigbauan</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/cabaluna.jpg">
+                </div>
+                <div class="description">
+                    <h1 class = "second" style="margin-left:-10px;">Salvador C. Cabaluna IV</h1>
+                    <p style="margin-left:-10px;"><b>Member</b><br><span>District 6 - Leon & Alimodian</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/malones.jpg">
+                </div>
+                <div class="description">
+                    <h1 style="margin-left:-20px;">Mariano D. Malones Jr.</h1>
+                    <p style="margin-left:-20px;"><b>Member</b><br><span>District 2 - Cabatuan & Maasin</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="images/sapitanan.jpg">
+                </div>
+                <div class="description">
+                    <h1 class = "second" style="margin-left:20px;">Engr. Miguel A. Paguntalan Jr</h1>
+                    <p style="margin-left:20px;"><span>General Manager, Ex-Officio Member</span></p><br>
+                </div>
+            </div>
+
+        </div>
+
+    <footer>
+          Copyright @ <?= date('Y'); ?>. <span>ILECO-1 Consumer's Portal</span> | All rights reserved!
+    </footer>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#10148;</button>
+    </div>
+
+</div>  
+</body>
+</html>
+
+<script>
+    // Hamburger Menu
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>

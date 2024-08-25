@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Tilt Neon', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+#wrapper{
+    background-image: url(../images/bg-ileco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #539165;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+    flex: 1;
+    -webkit-box-reflect: below -40px linear-gradient(transparent, rgba(0,0,0,.2));
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo a:hover{
+    animation: logo 2s;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes logo {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar.active{
+    height: 450px;
+}
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+
+.nav-bar ul li a:hover{
+    color: #2E8B57;
+    background: #fefefe;
+}
+
+.nav-bar ul li a.active{
+    color: #2E8B57;
+    background: #fefefe;
+}
+
+.nav-bar ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.nav-bar ul li:hover > ul{
+    display: block;
+    background-color: #539165;
+    border-radius: 10px;
+
+}
+
+.nav-bar ul ul li{
+    width: 290px;
+    float: none;
+    margin-bottom: 5px;
+}
+
+.btn-log{
+    cursor: pointer;
+    border: 2px solid #fbfcfd;
+    border-radius: 20px;
+    background: transparent;
+    font-weight: bold;
+    font-size:15px;
+    color: #fbfcfd;
+    margin: auto 10px;
+    padding: 10px 25px;
+}
+
+.btn-signup{
+    display: none;
+    cursor: pointer;
+    border: 2px solid #fbfcfd;
+    border-radius: 20px;
+    background: transparent;
+    font-weight: bold;
+    font-size:15px;
+    color: #fbfcfd;
+    margin: auto 10px;
+    padding: 10px 25px;
+}
+
+.btn-sign{
+    cursor: pointer;
+    border: 2px solid #fbfcfd;
+    border-radius: 20px;
+    padding: 10px 25px;
+    background: transparent;
+    font-weight: bold;
+    font-size:15px;
+    color: #ffffff;
+    margin-top:320px;
+    margin-left: 100px;
+    background-color: #2E8B57;
+}
+
+.update{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 25px;
+    position: relative;
+    color: #357ca6;
+}
+
+.bottom-line{
+    border-bottom: #2E8B57 5px solid;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer{
+    width:100%; 
+    text-align: center; 
+    color: white; background: #696969; 
+    position:sticky; 
+    font-size: 20px; 
+    top: 100%; 
+    height:50px; 
+    padding-top:15px;
+}
+
+
+/** Back to TOP Button*/
+#myBtn {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background-color: #2E8B57;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border: none;
+}
+
+#myBtn:hover {
+    background-color: #FFA500;
+    color: #000;
+}
+
+/** Reconnection Service CSS*/
+.reconnect-container{
+    background-image: url(../images/reconnection.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    margin: auto;
+}
+
+.reconnection-container {
+    margin-top: 20%;
+}
+
+.content-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20%;
+    height: 20%;
+}
+
+/** Waiver Service CSS*/
+.waiv-container {
+    background-image: url(../images/waiver_bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: auto;
+}
+
+.waiver-container {
+    margin-top: 20%;
+}
+
+.content-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 20%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/** Service Application Service CSS*/
+.app-container {
+    background-image: url(../images/application_service.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: auto;
+}
+
+.application-container {
+    margin-top: 41%;
+}
+
+.content-image-1{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 20%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.content-image-2{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 20%;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* About Us */
+
+.about-container{
+    background-image: url(../images/about_bg.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    margin: auto;
+}
+
+.about__wrapper{
+    margin-top: 45%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.about__title{
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.about__second__title{
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.about__first__wrapper,
+.about__second__wrapper{
+    text-align: center;
+    width: 100%;
+}
+
+.first__description{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about__second__wrapper{
+    text-align: justify;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#line{
+    border-left: 6px solid lightslategray;
+    height: 10px;
+}
+
+/** Board of Directors Design */
+.section{
+    width: 100%;
+    height: auto;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.cards .new-arrival{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cards .new-arrival h1{
+    text-align: center;
+    font-size: 30px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.cards .new-arival h1:after{
+    content:  "";
+    height: 5px;
+    width: 325px;
+    background-color: #222;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0,25);
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    margin: 10px;
+}
+
+.image-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 220px;
+    padding: 10px;
+}
+
+.description{
+    margin-top: 5px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.description h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffa500;
+    margin-top: 10px;
+    padding: 0;
+    text-align: left;
+}
+
+.description p{
+    font-size: 10px;
+    color: #222;
+}
+
+
+/*Media Quiries*/
+@media screen and (max-width: 1320px) {
+
+    header{
+        padding: 0 60px;
+    }
+
+    .reconnect-container{
+        height: 500px;
+    }
+
+    .waiv-container{
+        height: 500px;
+    }
+
+    .app-container{
+        height: 500px;
+    }
+
+    .about-container{
+        height: 500px;
+    }
+
+    .content-image{
+        width: 500px;
+        height: auto;
+    }
+
+    .content-image-1,
+    .content-image-2{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header{
+        padding: 0 40px;
+    }
+
+    .btn-log{
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .btn-sign{
+        display: none;
+    }
+
+    .btn-signup{
+        display: block;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        margin: 10px auto;
+        width: 90px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #539165;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul ul li{
+        text-align: justify;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+
+    .reconnect-container{
+        height: 300px;
+    }
+
+    .waiv-container{
+        height: 300px;
+    }
+
+    .app-container{
+        height: 300px;
+    }
+
+    .about-container{
+        height: 300px;
+    }
+
+    .first__description,
+    .about__second__wrapper{
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    .about__second__wrapper{
+        text-align: justify;
+    }
+
+    .content-image{
+        width: 400px;
+        height: auto;
+    }
+
+    .content-image-1,
+    .content-image-2{
+        width: 400px;
+        height: auto;
+    }
+
+    footer{
+        height: 40px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
