@@ -64,7 +64,7 @@ if (!empty($fname) && !empty($lname) && !empty($account_number) && !empty($email
                                                                                         $receiver = $email;
                                                                                         $subject = "From: $fname <$email>";
                                                                                         $body = "Name: " . "$fname $lname \n Email: " . " $email \n Otp: " . "$otp";
-                                                                                        $sender = "From: vesperxing02@gmail.com";
+                                                                                        $sender = "From: youremail@gmail.com";
 
                                                                                         if (mail($receiver, $subject, $body, $sender)) {
                                                                                                 echo "Success";
